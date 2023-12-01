@@ -13,7 +13,45 @@ import retweet from "../../assets/imgs/retweet.svg";
 import post__like from "../../assets/imgs/like.svg";
 import post_share from "../../assets/imgs/share.svg";
 import post__statistics from "../../assets/imgs/statistics.svg";
+
+
+
+
+
+
+
+
 const Home = () => {
+
+// const url = 'https://twitter154.p.rapidapi.com/user/details?username=omarmhaimdat&user_id=96479162';
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '79040252cemsh562468721609df7p1ef2f7jsnfaccb47e9a5a',
+// 		'X-RapidAPI-Host': 'twitter154.p.rapidapi.com'
+// 	}
+// };
+
+
+
+// async function getUsersDetails(){
+// try {
+//   const response = await fetch(url, options);
+//   const result = await response.json();
+//   console.log(result);
+// } catch (error) {
+//   console.error(error);
+// }
+// }
+
+// getUsersDetails()
+
+
+
+
+
+
+
   return (
     <div className="home">
       <div className="home__left">
