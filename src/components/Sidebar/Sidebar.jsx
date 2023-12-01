@@ -17,6 +17,7 @@ const Sidebar = () => {
     getUsersDetails()
   },[])
 
+  //url
 const url =
   "https://twitter154.p.rapidapi.com/user/details?username=omarmhaimdat&user_id=96479162";
 const options = {
