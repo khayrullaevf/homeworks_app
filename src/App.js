@@ -1,9 +1,14 @@
-import React from 'react'
+import Router from "./components/Routes/Router"
+
 
 const App = () => {
+
+
+
+
   return (
-    <div>
-      <small>Lesson-6</small>
+    <div >
+     <Router/>
     </div>
   )
 }
