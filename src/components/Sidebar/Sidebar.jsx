@@ -1,50 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import "./sidebar.css";
 
 import TwitterLogo from '../../assets/imgs/twitter-logo-4 1.svg'
+import userLogo from '../../assets/imgs/user.png'
 import { FaEllipsis } from "react-icons/fa6";
 
 
 
 const Sidebar = () => {
 
-  const [user,setUser]=useState([])
-
-
-
-  useEffect(()=>{
-    getUsersDetails()
-  },[])
-
-  //url
-const url =
-  "https://twitter154.p.rapidapi.com/user/details?username=omarmhaimdat&user_id=96479162";
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "79040252cemsh562468721609df7p1ef2f7jsnfaccb47e9a5a",
-    "X-RapidAPI-Host": "twitter154.p.rapidapi.com",
-  },
-};
-
-async function getUsersDetails() {
-  try {
-    const response = await fetch(url, options);
-    const result = await response.json();
-    setUser(result)
-
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-
-
-
   return (
     <div className="sidebar">
-      {console.log(user.profile_pic_url)}
       <Link to="/">
         <img src={TwitterLogo} alt="twitter-logo" className="twitter__logo" />
       </Link>
@@ -103,13 +70,13 @@ async function getUsersDetails() {
 
       <div className="sidebar__user">
         <img
-          src={user.profile_pic_url}
-          alt={user.name}
+          src={userLogo}
+          alt='user-logo'
           className="user__logo"
         />
         <div className="sidebar__user-info">
-          <h2>{user.name}</h2>
-          <h3>@{user.username}</h3>
+          <h2>Bobo</h2>
+          <h3>@bobor_mansurov</h3>
         </div>
         <FaEllipsis />
       </div>
@@ -117,4 +84,4 @@ async function getUsersDetails() {
   );
 }
 
-export default Sidebar
+export default React.memo(Sidebar);   
