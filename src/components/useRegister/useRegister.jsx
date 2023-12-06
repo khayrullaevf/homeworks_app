@@ -51,7 +51,7 @@ const useRegister = () => {
     localStorage.setItem("password", password);
     console.log("Submitted");
 
-    navigate("/profile");
+    navigate("/");
   };
 
   return {

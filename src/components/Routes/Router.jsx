@@ -31,7 +31,7 @@ const Router = () => {
           <Route path="/bookmarks" element={<Bookmarks />} />
           <Route path="/lists" element={<Lists />} />
           {isLoggedIn?(
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/profile" element={<Profile/>} />
           ) : (
             <Route path="/profile" element={<Navigate to="/register" />} />
           )}
