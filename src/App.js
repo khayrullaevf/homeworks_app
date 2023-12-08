@@ -1,9 +1,10 @@
 import React from 'react'
+import Todo from './components/Todo'
 
 const App = () => {
   return (
     <div>
-      <h3>Lesson-9</h3>
+      <Todo/>
     </div>
   )
 }
