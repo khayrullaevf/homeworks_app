@@ -15,8 +15,7 @@ import Register from "../../pages/Register/Register";
 import Login from "../Login/Login";
 
 const Router = () => {
-  const isLoggedIn =
-    localStorage.getItem("email")&&localStorage.getItem("password");
+  const isLoggedIn =localStorage.getItem("password");
     console.log(isLoggedIn);
   return (
     <div className="router container">
