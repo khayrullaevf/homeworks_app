@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 import { useEffect } from "react";
 
 const initialState = {
-  items: JSON.parse(localStorage.getItem("todoList")) || [],
+  items: JSON.parse(localStorage.getItem("todoList"))||[],
 };
 
 const reducer = (state, action) => {
